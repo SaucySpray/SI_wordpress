@@ -2,9 +2,10 @@
 <html <?php language_attributes(); ?>>
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
-        <title></title>
+        <title>L'effet papillon</title>
         <!-- Appel du fichier style.css de notre thème -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
 
         <!--
             Tout le contenu de la partie head de mon site
