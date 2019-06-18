@@ -20,6 +20,6 @@
     <?php
     }
     ?>
-</div> <!-- /content -->
+</div>
 
 <?php get_footer(); //appel du template footer.php ?>

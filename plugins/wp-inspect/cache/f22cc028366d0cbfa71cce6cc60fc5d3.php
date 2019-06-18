@@ -1,0 +1,2 @@
+<?php !defined('ABSPATH') && exit; ?>
+"<dl data-hookr=\"true\">    \n    <dt>Tag<\/dt>\n    <dd>in_admin_header<\/dd>\n        <dt>Value<\/dt>\n    <dd><pre><span class=\"val\">NULL<\/span><\/pre><\/dd>\n<\/dl>\n"
