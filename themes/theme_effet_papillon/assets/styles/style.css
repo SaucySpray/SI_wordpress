@@ -1,3 +1,23 @@
 h1{
     color:red;
+    animation: woo 1s infinite;
+}
+p{
+    color:red;
+    animation: woo 1s infinite;
+}
+
+@keyframes woo {
+    0%{
+        color: yellow;
+    }
+    33%{
+        color: red;
+    }
+    66%{
+        color: blue;
+    }
+    100%{
+        color: yellow;
+    }
 }

@@ -11,7 +11,7 @@
             <h1><?php the_title(); ?></h1>
             <h2>Posté le <?php the_time('F jS, Y') ?></h2>
             <p><?php the_content(); ?></p>
-            <p><?php the_permalink(); ?></p>
+            <a href="<?php the_permalink()?>">GO TO ARTICLE</a>
 
     <?php
     }
