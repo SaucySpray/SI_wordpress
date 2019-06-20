@@ -1,4 +1,63 @@
-.back-arrow{
-    width: 50px;
-    height: 50px;
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+body {
+  font-family: Open Sans;
+  background: #191919;
+  color: white; }
+
+.scrollbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 8px;
+  height: 100%; }
+  .scrollbar .scroll-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white; }
+  .scrollbar .scroll-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #6EE052; }
+
+.back-arrow {
+  height: 40px;
+  padding: 10px 10px 0 10px; }
+
+.canvas-container {
+  position: relative; }
+  .canvas-container h1 {
+    position: absolute;
+    font-size: 46px;
+    font-weight: bold;
+    padding: 0 10px;
+    opacity: 0.2;
+    top: 0;
+    left: 0; }
+  .canvas-container canvas {
+    width: 100%;
+    height: auto; }
+
+.container-article {
+  background: #292B2D;
+  padding: 0 10px; }
+  .container-article h1 {
+    font-size: 22px;
+    padding: 10px 0; }
+  .container-article h2 {
+    font-size: 12px;
+    text-transform: uppercase; }
+    .container-article h2 a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid white; }
+  .container-article .post-content {
+    padding: 20px 0;
+    font-weight: 300; }
+
+/*# sourceMappingURL=style.css.map */

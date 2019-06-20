@@ -1,5 +1,6 @@
 <?php get_header(); //appel du template header.php  ?>
 
+<div class="scrollbar"></div>
 <div id="content">
     <h1>Contenu Principal</h1>
     <?php
