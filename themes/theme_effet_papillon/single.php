@@ -15,6 +15,7 @@
         <h1 class="post-title"><?php the_title(); ?></h1>
     </div>
     <div class="container-article">
+        <div class="round"></div>
         <h1 class="post-title"><?php the_title(); ?></h1>
         <h2>Catégorie <?php the_category(', '); ?></h2>
         <div class="post-content">
