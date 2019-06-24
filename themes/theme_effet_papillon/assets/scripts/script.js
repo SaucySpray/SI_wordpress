@@ -6,10 +6,16 @@ class App {
         this.height = document.body.offsetHeight
         this.scrollbar = document.querySelector('.scrollbar');
         this.innerScroll = document.querySelector('.scroll-inner');
+        this.windowHeight = window.innerHeight
+        document.addEventListener('resize', () => {
+            this.height = document.body.offsetHeight
+            this.windowHeight = window.innerHeight
+            this.innerScroll.style.height = (100 *  window.scrollY) / (this.height - this.windowHeight) + "%"
+        })
+
         // Green Scroll Bar
-        
         document.addEventListener('scroll', (e) => {
-            this.innerScroll.style.height = (100 *  window.scrollY) / (this.height - window.innerHeight) + "%"
+            this.innerScroll.style.height = (100 *  window.scrollY) / (this.height - this.windowHeight) + "%"
         })
         // Color title on scrolling
         this.titles = document.querySelectorAll('h2')
@@ -18,7 +24,7 @@ class App {
         }        
         this.screenPos = []
         for (const title of this.titles) {
-            this.screenPos.push(title.offsetTop - (window.innerHeight/2))
+            this.screenPos.push(title.offsetTop - (this.windowHeight/2))
         }
 
         console.log(this.screenPos);
@@ -35,7 +41,6 @@ class App {
                 }
             }     
         })
-
     }
 }    
 
