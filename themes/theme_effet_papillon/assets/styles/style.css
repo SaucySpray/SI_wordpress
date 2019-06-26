@@ -13,34 +13,83 @@ body {
   color: white;
   overflow-x: hidden; }
 
-.scrollbar {
+.home h1 {
+  font-size: 46px;
+  font-weight: bold;
+  padding: 10px 10px 20px 10px;
+  opacity: 0.2; }
+.home .canvas-container {
+  position: relative; }
+  .home .canvas-container canvas {
+    width: 100%;
+    height: auto; }
+.home .round {
+  z-index: -2;
+  transform: scaleX(1.3) translateY(50px);
+  transform-origin: center;
+  width: 100%;
+  height: 100px;
+  border-radius: 100%;
+  background: #292B2D; }
+.home .content {
+  background: #292B2D; }
+  .home .content .article {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .home .content .article .info h2 {
+      font-size: 22px;
+      font-weight: bold; }
+    .home .content .article .info h3 {
+      margin: 20px 0 0 0;
+      font-size: 12px; }
+      .home .content .article .info h3 a {
+        text-decoration: none;
+        color: white; }
+    .home .content .article .to-article {
+      width: 50px;
+      height: 50px;
+      background: #6EE052;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .home .content .article .to-article a {
+        justify-content: center;
+        align-items: center;
+        display: flex; }
+        .home .content .article .to-article a img {
+          transform: rotate(180deg);
+          width: 40px;
+          height: 40px; }
+
+.single .scrollbar {
   position: fixed;
   right: 0;
   top: 0;
   width: 8px;
   height: 100%; }
-  .scrollbar .scroll-bg {
+  .single .scrollbar .scroll-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: white; }
-  .scrollbar .scroll-inner {
+  .single .scrollbar .scroll-inner {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 0%;
     background: #6EE052; }
-
-.back-arrow {
+.single .back-arrow {
   height: 40px;
   padding: 10px 10px 0 10px; }
-
-.canvas-container {
+.single .canvas-container {
   position: relative; }
-  .canvas-container h1 {
+  .single .canvas-container h1 {
     position: absolute;
     font-size: 46px;
     font-weight: bold;
@@ -48,15 +97,14 @@ body {
     opacity: 0.2;
     top: 0;
     left: 0; }
-  .canvas-container canvas {
+  .single .canvas-container canvas {
     width: 100%;
     height: auto; }
-
-.container-article {
+.single .container-article {
   background: #292B2D;
   margin: 50px 0 0 0;
   padding: 0 10px; }
-  .container-article .round {
+  .single .container-article .round {
     z-index: -2;
     position: relative;
     top: -50px;
@@ -67,30 +115,30 @@ body {
     height: 100px;
     border-radius: 100%;
     background: #292B2D; }
-  .container-article h1 {
+  .single .container-article h1 {
     font-size: 22px;
     line-height: 26px;
     font-weight: bold;
     padding: 10px 0; }
-  .container-article h2 {
+  .single .container-article h2 {
     font-size: 12px;
     text-transform: uppercase; }
-    .container-article h2 a {
+    .single .container-article h2 a {
       color: inherit;
       text-decoration: none;
       border-bottom: 1px solid white; }
-  .container-article .post-content {
+  .single .container-article .post-content {
     padding: 20px 0;
     font-weight: 300; }
-    .container-article .post-content h2 {
+    .single .container-article .post-content h2 {
       margin: 100px 0 20px 0;
       font-size: 22px;
       font-weight: bold; }
-    .container-article .post-content p {
+    .single .container-article .post-content p {
       margin: 0 0 100px 0;
       font-size: 16px;
       width: 60%; }
-    .container-article .post-content .intro {
+    .single .container-article .post-content .intro {
       width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

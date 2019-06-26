@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="main single">
-    <a href="#">
+    <a href="index.php">
         <img class="back-arrow" src="<?= IMAGES_URL.'/arrow-back.svg'?>" alt="">
     </a>
     <div class="scrollbar">
